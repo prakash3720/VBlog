@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Blogs">
+    <meta name="keywords" content="Blog,Read,Articles">
+    <meta name="author" content="Vimala R">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Courgette|Montserrat|Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+  </head>
+  <body>
+    <div class="navbarEdit">
+      <h1>Blog</h1>
+      <nav class="navbar navbar-expand navbar-light">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <%if(auth){%>
+            <li class="nav-item active">
+              <a class="nav-link" href="/newArticle">New Article</a>
+            </li>
+          <%}%>
+          <%if(!auth){%>
+            <li class="nav-item active">
+              <a class="nav-link" href="/login">Log in</a>
+            </li>
+          <%}%>
+          <%if(auth){%>
+            <li class="nav-item active">
+              <a class="nav-link" href="/logout">Log out</a>
+            </li>
+          <%}%>
+        </ul>
+      </nav>
+    </div>

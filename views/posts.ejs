@@ -1,0 +1,22 @@
+<%- include("header") -%>
+<div class="container">
+  <div class="card text-center" data-aos="fade">
+    <div class="card-body postDiv">
+      <h3 class="card-title"><%=data.heading%></h3>
+      <div class="card-text"><%-data.content-%></div>
+    </div>
+    <%if(auth){%>
+      <div class="postDiv">
+        <form class="postClass" action="/edit" method="post">
+          <input type="hidden" name="_id" value="<%=data._id%>">
+          <input type="submit" class="btn btn-primary" value="Edit">
+        </form>
+        <form class="postClass" action="/delete" method="post">
+          <input type="hidden" name="_id" value="<%=data._id%>">
+          <input type="submit" class="btn btn-primary" value="Delete">
+        </form>
+      </div>
+    <%}%>
+  </div>
+</div>
+<%- include("footer") -%>

@@ -1,0 +1,18 @@
+<%- include("header") -%>
+<div class="container">
+  <%for(let i=0;i<data.length;i++){%>
+    <div class="card text-center" data-aos="fade">
+      <div class="card-body">
+        <h4 class="card-title"><%=data[i].heading%></h4>
+        <div class="card-text"><%-data[i].content.substring(0,150)+"..."-%></div>
+        <a href=<%="/posts/"+data[i].heading.replace(/ +/g, "-")%> class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  <%}%>
+</div>
+<div class="arrow" id="arrowId">
+                <span></span>
+                <span></span>
+                <span></span>
+</div>
+<%- include("footer") -%>

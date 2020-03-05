@@ -1,0 +1,167 @@
+*{
+  border:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #c9d1d3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+.nav-link{
+  color: #00909e!important;
+  padding:16px 16px!important;
+}
+
+.navbar{
+  padding-top: 0px;
+}
+
+.navbarEdit{
+  background-color: #1b2a49;
+}
+
+.navbarEdit h1{
+  font-family: 'Courgette', cursive;
+  color: #00909e!important;
+  padding-top: 15px;
+  margin:0;
+  display: inline-block;
+  position: relative;
+  left:50%;
+  transform: translate(-50%,0%);
+  cursor: pointer;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding-top: 80px;
+  margin: auto;
+  text-align: center;
+}
+
+.form-signin h4{
+  padding-bottom: 20px;
+  font-family: 'Bree Serif';
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-group{
+  padding-top: 25px;
+}
+
+.form-group input[type="text"]{
+  margin-bottom: 15px;
+}
+
+.form-group .btn{
+  margin-top: 15px;
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,0%);
+}
+
+.card{
+  margin:1.5rem 0;
+}
+
+.card h3{
+  font-family: 'Bree Serif';
+  margin-bottom: 30px;
+}
+
+.card-title{
+  margin-bottom: 20px;
+}
+
+.card-text{
+  font-family: 'Montserrat';
+  text-align: left;
+}
+
+.postClass{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.postDiv{
+  padding-bottom: 0;
+}
+
+.arrow{
+    position: fixed;
+    display: inherit;
+    top: 80%;
+    right: 5%;
+    transform: translate(-70%,-5%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+  .arrow{
+    top:85%;
+    transform: translate(-80%,-5%);
+  }
+  .arrow span{
+    width: 25px;
+    height: 25px;
+  }
+}

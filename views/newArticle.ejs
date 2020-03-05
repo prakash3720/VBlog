@@ -1,0 +1,13 @@
+<%- include("header") -%>
+<div class="container">
+  <div class="form-group">
+    <form action="/newArticle" method="post">
+    <label>Heading of the Article</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="heading" placeholder="Enter the heading">
+    <label>Content of the Article</label>
+    <textarea name="content" rows="15" cols="80"></textarea>
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+  </div>
+</div>
+<%- include("footer") -%>
